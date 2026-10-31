@@ -1,0 +1,62 @@
+
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Java
+*.class
+*.log
+hs_err_pid*
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+application-secret.properties
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.sqlite
+*.db
+
+# Node.js
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Build directories
+build/
+dist/
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
