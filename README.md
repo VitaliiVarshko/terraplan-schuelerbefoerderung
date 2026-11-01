@@ -4,6 +4,10 @@
 
 Das Projekt demonstriert die Entwicklung einer webbasierten Anwendung mit einer REST-API, einer React-Benutzeroberfläche und einer relationalen PostgreSQL-Datenbank.
 
+## Screenshot
+
+![TerraPlan – Dashboard](docs/screenshots/dashboard.png)
+
 ## Funktionen
 
 - Übersicht aller Schülerfahrten

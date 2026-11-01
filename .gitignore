@@ -60,3 +60,14 @@ Desktop.ini
 *.tmp
 *.bak
 *.swp
+
+# Additional secrets
+*.secret
+secrets/
+credentials/
+.aws/
+
+# Frontend environment files
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
