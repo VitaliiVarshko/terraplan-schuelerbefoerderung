@@ -4,9 +4,19 @@
 
 Das Projekt demonstriert die Entwicklung einer webbasierten Anwendung mit einer REST-API, einer React-Benutzeroberfläche und einer relationalen PostgreSQL-Datenbank.
 
-## Screenshot
+## Screenshots
 
-![TerraPlan – Dashboard](docs/screenshots/dashboard.png)
+### Dashboard
+
+![TerraPlan Dashboard](docs/screenshots/dashboard.png)
+
+### Neue Fahrt anlegen
+
+![Neue Fahrt](docs/screenshots/trip-form.png)
+
+### Fahrtenübersicht und Filter
+
+![Fahrtenübersicht](docs/screenshots/trips-overview.png)
 
 ## Funktionen
 
@@ -39,6 +49,26 @@ Das Projekt demonstriert die Entwicklung einer webbasierten Anwendung mit einer 
 - Vite
 - HTML5
 - CSS3
+
+## Architektur
+
+Die Anwendung basiert auf einer klassischen Client-Server-Architektur:
+
+```mermaid
+flowchart TD
+    A["React Frontend<br/>JavaScript · Vite"] -->|"HTTP / REST API"| B["Spring Boot Backend<br/>Java 21"]
+    B --> C["Spring Data JPA / Hibernate"]
+    C --> D[("PostgreSQL Database")]
+```
+
+**Komponenten:**
+
+- **Frontend:** React-basierte Benutzeroberfläche zur Verwaltung der Schülerfahrten.
+- **Backend:** Spring Boot REST API für Geschäftslogik und Datenverarbeitung.
+- **Persistence:** Spring Data JPA und Hibernate für den Datenbankzugriff.
+- **Datenbank:** PostgreSQL zur persistenten Speicherung der Fahrtdaten.
+
+Die Kommunikation zwischen Frontend und Backend erfolgt über HTTP-basierte REST-Endpunkte.
 
 ## Projektstruktur
 
